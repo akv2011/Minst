@@ -95,7 +95,7 @@ def main():
     generator, latent_dim, num_classes = load_generator()
     
     if generator is None:
-        st.error("❌ Could not load the trained model. Please ensure 'models/cgan_mnist.pth' exists.")
+        st.error("❌ Could not load the trained model. Please ensure 'cgan_mnist.pth' exists in the root directory.")
         st.info("💡 Run the training script first to generate the model file.")
         return
     
