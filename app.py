@@ -50,7 +50,7 @@ def load_generator():
     
     try:
         # Load the saved model
-        checkpoint = torch.load('models/cgan_mnist.pth', map_location=device)
+        checkpoint = torch.load('cgan_mnist.pth', map_location=device)
         latent_dim = checkpoint['latent_dim']
         num_classes = checkpoint['num_classes']
         
